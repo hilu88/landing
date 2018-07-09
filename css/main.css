@@ -24,19 +24,20 @@ body{
     margin-top: 90px;
 }
 
-.header-h1{
+.header-info > h1 {
     font-family: montserrat;
     font-size: 38px;
 }
 
-.header-details{
+.header-details {
+    max-width: 600px;
+    padding-right: 15px;
     margin: 15px 0 0 5px;
 }
 
-.header-p {
-    margin: 5px 0 0 0;
+.header-details > span {
     font-family: 'Nunito Sans';
-    font-size: 15px;
+    font-size: 17px;
     color: #808080;
 }
 
@@ -53,27 +54,28 @@ body{
 
 .about-us{
     height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /*background-color: #2aabd2;*/
     padding: 150px 0 0 0;
 }
 
-.about-us-h3{
+.about-us > h3 {
     margin: 0;
     font-family: montserrat;
     font-size: 22px;
 }
 
-.about-us-info{
+.about-us > span {
+    max-width: 750px;
+    text-align: center;
     margin-top: 20px;
     font-family: 'Nunito Sans';
     color: #787878;
-}
+} 
 
-.about-us-p{
-    margin: 5px 0 0 0;
-}
-
-.about-us-signature{
+.about-us > img {
     margin-top: 20px;
 }
 
@@ -111,17 +113,13 @@ body{
 #slider{
     height: auto;
     color: #ffffff;
-    padding: 110px 0;
+    padding: 110px 20px;
     background-color: #10c9c3;
     font-family: montserrat;
     font-size: 24px;
 }
 
-#slider p{
-    margin: 7px 0;
-}
-
-#slider .sl_autor{
+#slider p {
     margin-top: 35px;
     font-size: 12px;
     font-family: montserrat;
@@ -178,18 +176,27 @@ body{
 
 
 #footer{
+    display: flex;
+    justify-content: space-between;
     height: auto;
     padding:100px 0 100px 0;
     background-color: #141414;
 }
 
-#footer h5 {
-    color: #ffffff;
-    font-family: montserrat;
-    font-size: 18px;
+#footer .links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.links p {
+    display: flex;
+    flex-direction: column;
 }
 
 #footer p {
+    display: flex;
+    flex-direction: column;
     color: #bcbcbc;
     font-family: 'Nunito Sans';
     font-size: 15px;
